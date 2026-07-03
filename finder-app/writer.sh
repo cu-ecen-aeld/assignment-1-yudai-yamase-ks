@@ -25,8 +25,6 @@ if [ "$#" -lt 2 ]; then
     echo "Error: missing arguments"
     echo "The number of args is $#"
     exit 1
-else
-    echo "good"
 fi
 
 if [ ! -f "$1" ]; then
