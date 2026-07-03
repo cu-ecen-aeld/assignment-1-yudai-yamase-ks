@@ -20,8 +20,6 @@ if [ "$#" -lt 2 ]; then
     echo "Error: missing arguments"
     echo "The number of args is $#"
     exit 1
-else
-    echo "good"
 fi
 
 # check if the first argument is a directory
@@ -34,8 +32,6 @@ fi
 
 num_files=$(find "$1" -type f 2>/dev/null | wc -l )
 
-echo "The number of files are $num_files"
-
 num_matching_lines=$(grep -r "$2" "$1" 2>/dev/null | wc -l)
 
-echo "The number of matching lines are $num_matching_lines"
+echo "The number of files are $num_files and the number of matching lines are $num_matching_lines"
