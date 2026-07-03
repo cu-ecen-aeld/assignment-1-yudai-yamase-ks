@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if [ "$#" -ne 2 ]; then
-    echo "Error: two arguments required" >&2
+    echo "Error: two arguments required (writefile writestr)" >&2
     exit 1
 fi
 
